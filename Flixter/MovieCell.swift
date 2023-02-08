@@ -25,10 +25,11 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var movieImage: UIImageView!
     
     func configure(with movie: Movie) {
-        movieTitle.text = movie.title
-        movieDescription.text = movie.description
-
+        movieTitle.text = movie.original_title
+        movieDescription.text = movie.overview
+        let final_url = Movie.posterBaseURLString + movie.poster_path
+        let final_url2 = URL(string:final_url)
         // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: movie.artworkUrl100, into: movieImage)
+        Nuke.loadImage(with: final_url2!, into: movieImage)
     }
 }

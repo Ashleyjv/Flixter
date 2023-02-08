@@ -23,14 +23,16 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Nuke.loadImage(with: movie.backdropImage, into: BackgroundImage)
+        let final_url_backdrop = Movie.posterBaseURLString + movie.poster_path
+        let fina_url_back2 = URL(string:final_url_backdrop)
+        Nuke.loadImage(with: fina_url_back2!, into: BackgroundImage)
 
             // Set labels with the associated track values.
-        MovieNameLabel.text = movie.title
-        VoteAverageLabel.text = movie.voteAverage
-        VoteCountLabel.text = movie.voteCount
-        PopularityLabel.text = movie.popularity
-        FullDescriptionLabel.text = movie.fullDescription
+        MovieNameLabel.text = movie.original_title
+        VoteAverageLabel.text = String(movie.vote_average)
+        VoteCountLabel.text = String(movie.vote_count)
+        PopularityLabel.text = String(movie.popularity)
+        FullDescriptionLabel.text = movie.overview
 //            // Create a date formatter to style our date and convert it to a string
 //            let dateFormatter = DateFormatter()
 //            dateFormatter.dateStyle = .medium

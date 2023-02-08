@@ -1,25 +1,23 @@
-# Project 2 - Flixter
+# Project 3 - Flixter (Part 2)
 
-Submitted by: Ashley Jojan Varghese
+Submitted by: Ashley Varghese
 
-Flixter is a movie browsing app that lets you browse through movies and click on them to view more information about it 
+Flixter is an app that introduces networking and helps understand networking tools to get data from the Movie DB and display the data.
 
-Time spent: 8 hours hours spent in total
+Time spent: 20 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [Y] Users are able to see a customized app icon and launch screen
-- [Y] Your app should work for any screen size and orientation using AutoLayout constraints
-- [Y] Displays at least 5 different movies in a table view
-- [Y] Can tap into detail view of movie with a full description, backdrop image, and title
+- [Y] Implement network call and table view to display a list of movies currently playing (title, description, image)
+- [Y] App has a collection view with the same list of movies
+- [Y] Uses a tab bar controller to switch between collection view and table view screens
  
 The following **optional** features are implemented:
 
-- [Y] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
+- [ ] Make an additional network call to another end-point.    
+- [ ] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
@@ -29,9 +27,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-https://imgur.com/wThgGiP
+<img src='https://imgur.com/sNmqc6l' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-This is a link to the gif uploaded onto imgur.com
+
+video walkthrough: https://imgur.com/sNmqc6l
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -42,7 +41,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Swift errors were confusing and not intuitive, particularly type casting issues.
 
 ## License
 
